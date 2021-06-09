@@ -1,0 +1,149 @@
+.channel {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    109.2deg,
+    rgba(107, 52, 255, 1) 16.5%,
+    rgba(51, 159, 247, 1) 81%
+  );
+  color: #fff;
+}
+
+.channel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 5%;
+  padding-top: 5%;
+}
+
+.channel__logotipo {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.channel__header-button {
+  width: 20%;
+  height: 80%;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: transparent;
+  color: white;
+}
+
+.channel__list {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-width: 100%;
+  height: 70%;
+  max-height: 70%;
+  padding: 5%;
+}
+
+.channel__list-item {
+  width: 100%;
+  margin: 5% auto;
+  list-style: none;
+}
+
+.channel__form {
+  box-sizing: border-box;
+  bottom: 0%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 12%;
+  padding: 0% 2%;
+  color: white;
+}
+
+.channel__input {
+  width: 100%;
+  max-width: 100%;
+  height: 50%;
+  margin: 0;
+  border: transparent;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: #fff;
+  outline: 0;
+  font-size: 1.3rem;
+}
+
+.channel__input::placeholder {
+  color: white;
+}
+
+.channel__send-form {
+  width: 70px;
+  height: 40px;
+  /* min-height: 80%; */
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: transparent;
+  color: white;
+}
+
+@media screen and (min-width: 1365px) {
+  .channel {
+    /* background-color: tomato; */
+  }
+
+  .channel__header {
+    justify-content: space-between;
+    /* background-color: red; */
+    padding: 1% 0 0 0;
+  }
+
+  .channel__logotipo,
+  .channel__header-button {
+    margin: 0% 1%;
+  }
+
+  .channel__logotipo {
+    font-weight: 700;
+  }
+
+  .channel__header-button {
+    width: 8%;
+  }
+
+  .channel__header-button:hover {
+    background-color: white;
+    color: #1c1c1e;
+  }
+
+  .channel__list {
+    box-sizing: border-box;
+    width: 100%;
+    height: 83%;
+    max-height: 90%;
+    padding: 0;
+  }
+
+  .channel__list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .channel__list-item {
+    /* background-color: blue; */
+  }
+
+  .channel__form {
+    height: 7%;
+  }
+
+  .channel__form {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .channel__send-form:hover {
+    background-color: white;
+    color: #1c1c1e;
+  }
+}

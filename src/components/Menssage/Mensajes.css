@@ -1,0 +1,90 @@
+.mensajes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 5% auto;
+  border: 2px solid white;
+  border-radius: 20px;
+  /* background-color: rgba(56, 29, 129, 0.63) ; */
+  /* background: linear-gradient(to right, #232526, #414345);  */
+  color: #fff;
+}
+
+.mensajes__images {
+  flex: 1;
+  display: inline-block;
+  max-width: 10%;
+  width: 10%;
+  margin: 2%;
+}
+
+.mensajes__image {
+  top: 0;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.mensajes__info-text {
+  max-width: 90%;
+  width: 85%;
+}
+
+.mensajes__name {
+  top: 0;
+  display: inline-block;
+  flex: 1;
+  width: 100%;
+  margin: 5% auto;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.mensajes__text {
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 90%;
+  word-wrap: break-word;
+  margin: 5% auto;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.mensajes__date {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  /* color: #7574cd; */
+  color: #fff;
+  padding: 2%;
+}
+
+@media screen and (min-width: 1365px) {
+  .mensajes {
+    width: 60%;
+  }
+
+  .mensajes__name {
+    margin: 3% auto;
+  }
+
+  .mensajes__images {
+    width: 8%;
+    max-width: 100%;
+    flex: none;
+  }
+
+  .mensajes__image {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    /* background-color: blue; */
+  }
+
+  .mensajes__text {
+    margin: 0 auto;
+  }
+}
